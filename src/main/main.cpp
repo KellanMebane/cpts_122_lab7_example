@@ -4,17 +4,25 @@ int main(void)
 {
 	// Start with debugging this project! "Step Into" each statement to answer the questions!
 	// Question 1: what function is called in the statement below?
-	ListNode n1;
+	ListNode n1; 
+	//[ANSWER] default constructor
+
 	// Question 2: what function is called in the statement below?
 	ListNode n2(42); // shallow or deep copy?
+	//[ANSWER] default constructor again
+
 	// Question 3: what function is called in the statement below?
 	ListNode n3(n2); // shallow or deep copy?
+	//[ANSWER] copy constructor is called (shallow)
+
 	// Question 4: what function is called in the statement below?
 	ListNode n4 = n3; // shallow or deep copy?
+	//[ANSWER] copy constructor (shallow)
 	
 	ListNode n5;
 	// Question 5: what function/operator is called in the statement below?
 	n5 = n4; // did we explicitly implement this function/operator? 
+	//[ANSWER] the compiler thinks this is an overloaded function, we haven't implemented this yet so a debug error is thrown.
 
 	// Question 6: what function is called in the statement below?
 	List l1;

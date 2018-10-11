@@ -3,6 +3,7 @@
 // constructor - "constructs" a ListNode; initializes the object
 ListNode::ListNode(int newData)
 {
+	cout << "Inside ListNode default constructor\n";
 	mData = newData;
 	mpNext = nullptr;
 }
@@ -12,6 +13,7 @@ ListNode::ListNode(int newData)
 ListNode::ListNode(const ListNode &copy)
 {
 	// shallow copy performed!
+	cout << "Inside ListNode copy constructor\n";
 	mData = copy.mData;
 	mpNext = copy.mpNext;
 }
